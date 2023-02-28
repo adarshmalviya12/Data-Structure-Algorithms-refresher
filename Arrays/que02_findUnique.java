@@ -1,8 +1,18 @@
 package Arrays;
 
+import java.util.Scanner;
+
 public class que02_findUnique {
     public static void main(String[] args) {
-        int arr[]={21,7,3,21,5,7,5};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Size of Array: ");
+        int n = sc.nextInt();
+        System.out.println("Enter " + n + " Elements");
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
         System.out.println("Unique Element : " + findUnique(arr) );
     }
     public static  int findUnique(int[] arr){
